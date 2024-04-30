@@ -11,14 +11,14 @@ $$
 If:
 
 $$
-E_1 / (t_{h1} + (t_{s1}) < E_2 / (t_{h2} + (t_{s2})
+E_1 / (t_{h1} + t_{s1}) < E_2 / (t_{h2} + t_{s2})
 $$
 
 the predator targets smaller prey, P2.
 If:
 
 $$
-E_1 / (t_{h1} + (t_{s1}) > E_2 / (t_{h2} + (t_{s2})
+E_1 / (t_{h1} + t_{s1}) > E_2 / (t_{h2} + t_{s2})
 $$
 
 the predator targets larger prey, P1.
@@ -54,18 +54,24 @@ value = prey.energy / ((prey.handling * BASE_METABOLISM) + (distance * (MOVEMENT
 
 The model is simulated multiple times to eliminate the errors caused by the position of the preys and predators. All parameters are same expect for the simulation for 10 prey size. The base metabolism and movement cost is decreased to eliminate negative results. Also, it is simulated 500 times to get accurate results as the prey number is so low that random positions can effect the results. For other simulations, I used 100 simulations with prey count 25, 50, 100, 200 respectively. The results are analyzed  based on predator mean energy and frequency of prey sizes eaten by predator types. 
 
+### Figure 1
 ![Figure 1](files/500_10_2_2.png)
-    Figure 1
+
+### Figure 2
 ![Figure 2](files/100_25_2_2.png)
-	Figure 2
+
+### Figure 3
 ![Figure 3](files/100_50_2_2.png)
-	Figure 3
+
+### Figure 4
 ![Figure 4](files/100_100_2_2.png)
-    Figure 4
+
+### Figure 5
 ![Figure 5](files/100_200_2_2.png)
-    Figure 5
+
+### Figure 6
 ![Figure 6](files/ultimate_data.png)
-    Figure 6
+
 ## Discussion
 
 From these results, the prediction of optimal foraging is maximizing net energy gain over foraging closest prey.  On mean energy graph over time graph from figure 1-5, "OPT" predators mean energy is higher than the "SPL" predators mean energy. 
